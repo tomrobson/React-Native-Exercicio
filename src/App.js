@@ -1,6 +1,8 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
+import Familia from './components/Relacao/Familia'
+import Membro from './components/Relacao/Membro'
 import ParImpar from './components/ParImpar'
 import ContadorV2 from './components/Contador/ContadorV2'
 import PaiI from './components/Indireta/Pai'
@@ -16,7 +18,18 @@ import CompDefault, { Comp1, Comp2 } from './components/Multi'
 
 export default () => (
     <View style={style.App}>
-        <ParImpar num={3} />
+        <Familia>
+            <Membro nome = "Bia" sobrenome = "Silva" />
+            <Membro nome = "Bruna" sobrenome = "Silva" />
+        </Familia>
+        <Familia>
+            <Membro nome = "Carlos" sobrenome = "Rocha" />
+            <Membro nome = "Carla" sobrenome = "Rocha" />
+            <Membro nome = "Vanessa" sobrenome = "Rocha" />
+            <Membro nome = "João" sobrenome = "Rocha" />
+        </Familia>
+
+        {/* <ParImpar num={3} /> */}
 
         {/* <ContadorV2 /> */}
 
