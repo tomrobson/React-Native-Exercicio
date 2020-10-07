@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
+import ContadorV2 from './components/Contador/ContadorV2'
 import PaiI from './components/Indireta/Pai'
 import PaiD from './components/Direta/Pai'
 import Contador from './components/Contador'
@@ -14,7 +15,9 @@ import CompDefault, { Comp1, Comp2 } from './components/Multi'
 
 export default () => (
     <View style={style.App}>
-        <PaiI />
+        <ContadorV2 />
+
+        {/* <PaiI /> */}
 
         {/* <PaiD /> */}
 
