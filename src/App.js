@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
+import UsuarioLogado from './components/UsuarioLogado'
 import Familia from './components/Relacao/Familia'
 import Membro from './components/Relacao/Membro'
 import ParImpar from './components/ParImpar'
@@ -18,7 +19,14 @@ import CompDefault, { Comp1, Comp2 } from './components/Multi'
 
 export default () => (
     <View style={style.App}>
-        <Familia>
+        <UsuarioLogado usuario = {{ nome: 'João', email: 'jo@gmail.com' }} />
+        <UsuarioLogado usuario = {{ nome: 'Ana' }} />
+        <UsuarioLogado usuario = {{ email: 'ana@gmail.com' }} />
+        <UsuarioLogado usuario = {null} />
+        <UsuarioLogado usuario = {{}} />
+        <UsuarioLogado usuario = {{ nome: 'Ana', email: 'ana@gmail.com' }} />
+
+        {/* <Familia>
             <Membro nome = "Bia" sobrenome = "Silva" />
             <Membro nome = "Bruna" sobrenome = "Silva" />
         </Familia>
@@ -27,7 +35,7 @@ export default () => (
             <Membro nome = "Carla" sobrenome = "Rocha" />
             <Membro nome = "Vanessa" sobrenome = "Rocha" />
             <Membro nome = "João" sobrenome = "Rocha" />
-        </Familia>
+        </Familia> */}
 
         {/* <ParImpar num={3} /> */}
 
