@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
+import ListaProdutos from './components/Produtos/ListaProdutos'
 import UsuarioLogado from './components/UsuarioLogado'
 import Familia from './components/Relacao/Familia'
 import Membro from './components/Relacao/Membro'
@@ -19,12 +20,14 @@ import CompDefault, { Comp1, Comp2 } from './components/Multi'
 
 export default () => (
     <View style={style.App}>
-        <UsuarioLogado usuario = {{ nome: 'João', email: 'jo@gmail.com' }} />
+        <ListaProdutos />
+
+        {/* <UsuarioLogado usuario = {{ nome: 'João', email: 'jo@gmail.com' }} />
         <UsuarioLogado usuario = {{ nome: 'Ana' }} />
         <UsuarioLogado usuario = {{ email: 'ana@gmail.com' }} />
         <UsuarioLogado usuario = {null} />
         <UsuarioLogado usuario = {{}} />
-        <UsuarioLogado usuario = {{ nome: 'Ana', email: 'ana@gmail.com' }} />
+        <UsuarioLogado usuario = {{ nome: 'Ana', email: 'ana@gmail.com' }} /> */}
 
         {/* <Familia>
             <Membro nome = "Bia" sobrenome = "Silva" />
